@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Per un grande finale, un grande tool</title>
+    </head>
+    <body>
+        <section>
+            <h2>I PRONO</h2>
+            <table>
+                <tr>
+                    <th>Sfidanti</th>
+                    <th>Ven-Juv</th>
+                    <th>Tor-Rom</th>
+                    <th>Ata-Par</th>
+                    <th>Laz-Lec</th>
+                    <th>Udi-Fio</th>
+                    <th>Emp-Ver</th>
+                </tr>
+                <tr>
+                    <td>Tizy</td>
+                    <td>1-2</td>
+                    <td>0-2</td>
+                    <td>2-2</td>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                    <td>1-0</td>
+                </tr>
+                <tr>
+                    <td>Mirco</td>
+                    <td>1-1</td>
+                    <td>0-2</td>
+                    <td>3-1</td>
+                    <td>1-0</td>
+                    <td>0-1</td>
+                    <td>1-0</td>
+                </tr>
+                <tr>
+                    <td>Gabriele</td>
+                    <td>1-2</td>
+                    <td>0-1</td>
+                    <td>2-1</td>
+                    <td>1-0</td>
+                    <td>0-1</td>
+                    <td>1-1</td>
+                </tr>
+                <tr>
+                    <td>Roberto</td>
+                    <td>1-1</td>
+                    <td>0-2</td>
+                    <td>1-1</td>
+                    <td>0-2</td>
+                    <td>1-2</td>
+                    <td>1-0</td>
+                </tr>
+            </table>
+            <h3>Situazione LIVE</h3>
+            <div style="border: 2px solid red; width: fit-content;">
+                Gabriele - Roberto <b><span id="gabriRes"></span> - <span id="robertoRes"></span></b>
+                <br>
+                Mirco - Tizy <b><span id="mircoRes"></span> - <span id="tizyRes"></span></b>
+            </div>
+            
+            <div style="border: 2px solid blue; width: fit-content;">
+                <span id="winner"></span> VINCITORE!!!!!!
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <h2>Risultati da aggiornare</h2>
+            <form id="formRisultati">
+
+                <!-- Partita 1 -->
+                <fieldset>
+                    <legend>Ven-Juv</legend>
+                    <label>Venezia: <input type="number" name="gol1_1" min="0" required></label> -
+                    <label>Juve: <input type="number" name="gol2_1" min="0" required></label>
+                </fieldset><br>
+
+                <!-- Partita 2 -->
+                <fieldset>
+                    <legend>Tor-Rom</legend>
+                    <label>Torino: <input type="number" name="gol1_2" min="0" required></label> -
+                    <label>Roma: <input type="number" name="gol2_2" min="0" required></label>
+                </fieldset><br>
+
+                <!-- Partita 3 -->
+                <fieldset>
+                    <legend>Ata-Par</legend>
+                    <label>Atalanta: <input type="number" name="gol1_3" min="0" required></label> -
+                    <label>Parma: <input type="number" name="gol2_3" min="0" required></label>
+                </fieldset><br>
+
+                <!-- Partita 4 -->
+                <fieldset>
+                    <legend>Laz-Lec</legend>
+                    <label>Lazio: <input type="number" name="gol1_4" min="0" required></label> -
+                    <label>Lecce: <input type="number" name="gol2_4" min="0" required></label>
+                </fieldset><br>
+
+                <!-- Partita 5 -->
+                <fieldset>
+                    <legend>Udi-Fio</legend>
+                    <label>Udinese: <input type="number" name="gol1_5" min="0" required></label> -
+                    <label>Fiorentina: <input type="number" name="gol2_5" min="0" required></label>
+                </fieldset><br>
+
+                <!-- Partita 6 -->
+                <fieldset>
+                    <legend>Emp-Ver</legend>
+                    <label>Empoli: <input type="number" name="gol1_6" min="0" required></label> -
+                    <label>Verona: <input type="number" name="gol2_6" min="0" required></label>
+                </fieldset><br>
+
+                <button type="submit">Calcola</button>
+            </form>
+        </section>
+
+        <script src="compute.js"></script>
+    </body>
+</html>
