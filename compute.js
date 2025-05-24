@@ -11,8 +11,8 @@ tizy = [[1, 2], [0, 2], [2, 2], [1, 1], [1, 2], [1, 0]]
 
 puntiMirco = 80
 puntiGab = 82
-secchiMirco = 48
-secchiGab = 46
+secchiMirco = 50
+secchiGab = 47
 
 function setResults() {
     var el = document.getElementById('mircoRes');
