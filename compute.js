@@ -28,8 +28,22 @@ function setResults() {
     el.innerHTML = robertoRes;
 }
 
-function setPoints () {
+function reset () {
+    mircoRes = 7
+    tizyRes = 7
+    gabriRes = 5
+    robertoRes = 6
 
+    gabriele = [[1, 2], [0, 1], [2, 1], [1, 0], [0, 1], [1, 1]]
+    roberto = [[1, 1], [0, 2], [1, 1], [0, 2], [1, 2], [1, 0]]
+
+    mirco = [[1, 1], [0, 2], [3, 1], [1, 0], [0, 1], [1, 0]]
+    tizy = [[1, 2], [0, 2], [2, 2], [1, 1], [1, 2], [1, 0]]
+
+    puntiMirco = 80
+    puntiGab = 82
+    secchiMirco = 50
+    secchiGab = 47
 }
 
 function setStanding() {
@@ -65,6 +79,9 @@ function setStanding() {
 }
 
 document.getElementById('formRisultati').addEventListener('submit', function(e) {
+
+  reset()
+
   e.preventDefault();
 
   for (let i = 1; i <= 6; i++) {
