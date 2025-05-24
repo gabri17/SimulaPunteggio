@@ -107,7 +107,7 @@ document.getElementById('formRisultati').addEventListener('submit', function(e) 
     const gol2Mirc = mirco[i-1][1];
 
     segnoReal = (gol1 > gol2) ? 1 : (gol1 < gol2 ? 2 : 0);
-    segnoMirc = (gol1Mirc > gol2Rob) ? 1 : (gol2Mirc < gol2Rob ? 2 : 0);
+    segnoMirc = (gol1Mirc > gol2Mirc) ? 1 : (gol1Mirc < gol2Mirc ? 2 : 0);
 
     if( gol1 == gol1Mirc && gol2 == gol2Mirc ){
         mircoRes += 3
@@ -122,7 +122,7 @@ document.getElementById('formRisultati').addEventListener('submit', function(e) 
     const gol2Tiz = tizy[i-1][1];
 
     segnoReal = (gol1 > gol2) ? 1 : (gol1 < gol2 ? 2 : 0);
-    segnoTiz = (gol1Tiz > gol2Tiz) ? 1 : (gol2Tiz < gol2Tiz ? 2 : 0);
+    segnoTiz = (gol1Tiz > gol2Tiz) ? 1 : (gol1Tiz < gol2Tiz ? 2 : 0);
 
     if( gol1 == gol1Tiz && gol2 == gol2Tiz ){
         tizyRes += 3
