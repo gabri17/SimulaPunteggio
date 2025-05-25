@@ -80,6 +80,10 @@
         <hr class="my-5">
 
         <section>
+            
+            <div id="countdown" class="text-center fs-4 my-4 text-danger"></div>
+
+
             <h2 class="text-center mb-4">Risultati da aggiornare</h2>
 
             <div class="d-flex justify-content-center">
@@ -150,5 +154,34 @@
         </section>
 
         <script src="compute.js"></script>
+        <script>
+            function updateCountdown() {
+                const now = new Date();
+
+                // Set target time: today at 20:45
+                let target = new Date();
+                target.setHours(20, 45, 0, 0);
+
+                // If it's already past 20:45, set for tomorrow
+                if (now > target) {
+                    document.getElementById("countdown").textContent = "BENVENUTI ALL'INFERNO";
+                    return;
+                }
+
+                const diffMs = target - now;
+
+                const hours = Math.floor(diffMs / (1000 * 60 * 60));
+                const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").textContent =
+                    `${hours} ore, ${minutes} minuti, ${seconds} secondi all'inizio dell'inferno`;
+            }
+
+            // Update every second
+            setInterval(updateCountdown, 1000);
+            updateCountdown(); // Initial call
+        </script>
+
     </body>
 </html>
