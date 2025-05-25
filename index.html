@@ -81,81 +81,72 @@
 
         <section>
             <h2 class="text-center mb-4">Risultati da aggiornare</h2>
-            <form id="formRisultati">
 
-                <!-- Repeatable Match Fieldsets -->
-                <div class="row g-3">
-                <!-- Match 1 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Ven-Juv</legend><br>
-                    <label class="form-label">Venezia:</label>
-                    <input type="number" name="gol1_1" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Juve:</label>
-                    <input type="number" name="gol2_1" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
+            <div class="d-flex justify-content-center">
+                <form id="formRisultati">
+                    <div class="d-flex flex-column gap-3">
 
-                <!-- Match 2 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Tor-Rom</legend><br>
-                    <label class="form-label">Torino:</label>
-                    <input type="number" name="gol1_2" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Roma:</label>
-                    <input type="number" name="gol2_2" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
+                        <!-- Match 1 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Venezia</label>
+                        <input type="number" name="gol1_1" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_1" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Juve</label>
+                        </div>
 
-                <!-- Match 3 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Ata-Par</legend><br>
-                    <label class="form-label">Atalanta:</label>
-                    <input type="number" name="gol1_3" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Parma:</label>
-                    <input type="number" name="gol2_3" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
+                        <!-- Match 2 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Torino</label>
+                        <input type="number" name="gol1_2" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_2" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Roma</label>
+                        </div>
 
-                <!-- Match 4 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Laz-Lec</legend><br>
-                    <label class="form-label">Lazio:</label>
-                    <input type="number" name="gol1_4" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Lecce:</label>
-                    <input type="number" name="gol2_4" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
+                        <!-- Match 3 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Atalanta</label>
+                        <input type="number" name="gol1_3" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_3" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Parma</label>
+                        </div>
 
-                <!-- Match 5 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Udi-Fio</legend><br>
-                    <label class="form-label">Udinese:</label>
-                    <input type="number" name="gol1_5" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Fiorentina:</label>
-                    <input type="number" name="gol2_5" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
+                        <!-- Match 4 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Lazio</label>
+                        <input type="number" name="gol1_4" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_4" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Lecce</label>
+                        </div>
 
-                <!-- Match 6 -->
-                <div class="col-12 col-md-6">
-                    <fieldset class="border p-3 rounded">
-                    <legend class="w-auto px-2">Emp-Ver</legend><br>
-                    <label class="form-label">Empoli:</label>
-                    <input type="number" name="gol1_6" class="form-control mb-2" min="0" required>
-                    <label class="form-label">Verona:</label>
-                    <input type="number" name="gol2_6" class="form-control" min="0" required>
-                    </fieldset>
-                </div>
-                </div>
+                        <!-- Match 5 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Udinese</label>
+                        <input type="number" name="gol1_5" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_5" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Fiorentina</label>
+                        </div>
 
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary px-4">Calcola</button>
-                </div>
-            </form>
+                        <!-- Match 6 -->
+                        <div class="d-flex align-items-center gap-2">
+                        <label class="mb-0">Empoli</label>
+                        <input type="number" name="gol1_6" class="form-control form-control-sm w-auto" min="0" required>
+                        <span>-</span>
+                        <input type="number" name="gol2_6" class="form-control form-control-sm w-auto" min="0" required>
+                        <label class="mb-0">Verona</label>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary px-4">Calcola</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <script src="compute.js"></script>
